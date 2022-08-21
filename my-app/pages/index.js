@@ -3,7 +3,7 @@ import Head from "next/head";
  import styles from "../styles/Home.module.css";
 import Web3Modal from "web3modal";
 import  { providers, Contract , utils } from "ethers"; //utils-to use ethers in eth in palce of wei
-import React, { useEffect, useRef, useState } from "react";
+import  {useEffect, useRef, useState } from "react";
 import { NFT_CONTRACT_ABI, NFT_CONTRACT_ADDRESS } from '../constants';
 
   export default function Home(){
