@@ -192,8 +192,8 @@ try {
     
     //if user is not connected rto rinkeby then we alert them to connect to rinkeby
     const { chainId } = await web3Provider.getNetwork(); // every network whether be mainnet or rinkeby every has a chain id and rinkeby has chain id 4
-    if(chainId !== 4) {
-      window.alert("Please switch to the rinkeby network");
+    if(chainId !== 5) {
+      window.alert("Please switch to the Goerli network");
       throw new Error("Incorrect network");
 
     }
@@ -230,7 +230,7 @@ try {
 useEffect(() => {
   if(!walletConnected) {
     web3ModalRef.current  = new Web3Modal({
-network: "rinkeby",
+network: "goerli",
 providerOptions: {},
 disableInjectedProvider: false,
 
